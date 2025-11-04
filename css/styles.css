@@ -62,16 +62,12 @@ a {
 }
 /* #region header */
 
-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 .page-header .container{
   display: flex;
   justify-content: space-between;
   padding-top: 24px;
   padding-bottom: 24px;
+  align-items: center;
 }
 
 .menu {
@@ -89,20 +85,6 @@ section {
   gap: 40px;
 }
 
-/* #endregion header */
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} 
   .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -136,9 +118,29 @@ section {
   .link_adress:hover, .link_adress:focus {
     color: #404bbf;
   }
-/* #region header */
+/* #endregion header */
 
 /* #region hero */
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* #region section1 */
 .section_first {
   color: #FFFFFF;
   background-color: #2E2F42;
@@ -148,9 +150,12 @@ section {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
+  max-width: 496px;
   letter-spacing: 0.02em;
-  padding-top: 188px;
+  padding-top: 68px;
+  
 }
+
 
 .button {
   color: #FFFFFF;
@@ -158,6 +163,12 @@ section {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border-radius: 4px;
+  padding: 16px 32px;
+  height: 56px;
+  margin-top: 48px;
+  display: block;
+  
 }
 .button:hover, button:active, button:focus {
   color: #FFFFFF;
@@ -165,6 +176,10 @@ section {
   cursor: pointer;
 }
 
+/* #endregion section1 */
+
+
+/* #region section2 */
 .section_second {
   background-color: #FCFCFC;
   border: 1px solid;
@@ -183,6 +198,8 @@ section {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+/* #endregion section2 */
+
 
 .section_third {
   background-color: #F4F4FD;
