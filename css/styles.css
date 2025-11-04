@@ -21,17 +21,88 @@ body {font-family: "Roboto", sans-serif;
      color: #434455;
      background-color: #FFFFFF;
 }
+* {
+  box-sizing: border-box;
+}
+
+/* Обнулення стандартних відступів */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0; /* видаляє зовнішні відступи */
+}
+
+/* Робимо зображення блочними елементами */
+img {
+  display: block; /* блочний елемент */
+  max-width: 100%; /* щоб не виходили за межі контейнера */
+  height: auto; /* зберігає пропорції */
+}
+
+/* Скидаємо стандартні маркери у списках */
+ul {
+  margin: 0;  /* прибирає зовнішні відступи */
+  padding-left: 0; /* прибирає внутрішній відступ зліва */
+  list-style: none;
+}
 
 /* Скидаємо підкреслення у посилань */
 a {
     text-decoration: none;
   }
-  
-/* Скидаємо стандартні маркери у списках */
-ul {
-    list-style: none;
-  }
 
+   /* 04.11 */
+.container { 
+  max-width: 1158px;
+  width: 100%;
+  padding-left: 15px; 
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px; 
+  margin-left:  auto;
+  margin-right:  auto;
+}
+/* #region header */
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.page-header .container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.menu {
+  display: flex;
+  gap: 76px;
+}
+
+.first-link {
+  display: flex;
+  gap: 40px;
+}
+
+.first-link_adress {
+  display: flex;
+  gap: 40px;
+}
+
+/* #endregion header */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} 
   .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -65,17 +136,20 @@ ul {
   .link_adress:hover, .link_adress:focus {
     color: #404bbf;
   }
+/* #region header */
 
+/* #region hero */
 .section_first {
   color: #FFFFFF;
   background-color: #2E2F42;
 }
 
-.header {
+.text-header {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  padding-top: 188px;
 }
 
 .button {
@@ -171,6 +245,10 @@ ul {
   color: #f4f4fd;
 }
 
+/* #endregion hero */
+
+/* #region footer */
+
 .footer {
   color: #FFFFFF;
   background-color: #2E2F42;
@@ -181,3 +259,4 @@ ul {
   color: #F4F4FD;
   letter-spacing: 0.02em;
 }
+/* #endregion footer */
